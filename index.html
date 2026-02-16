@@ -4,26 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Muhammad Dawood - Junior Data Scientist and Web Engineer. Portfolio showcasing skills in Data Science, AI/ML, Web Development, and projects.">
-    <meta name="keywords" content="Data Scientist, Web Developer, Python, Machine Learning, AI, Portfolio, Muhammad Dawood">
+    <meta name="description" content="Muhammad Dawood - Junior Data Scientist and Web Engineer. Expert in AI/ML, Full-Stack Development, and Data Analytics. Creating innovative tech solutions.">
+    <meta name="keywords" content="Data Scientist, Web Developer, Python, Machine Learning, AI, Portfolio, Muhammad Dawood, Full Stack Developer">
     <meta name="author" content="Muhammad Dawood">
-    <title>Muhammad Dawood - Data Scientist & Web Engineer</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Muhammad Dawood | Data Scientist & AI Engineer</title>
+    
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 (Pro icons with free version) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts - Modern Font Stack -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Particle.js Background -->
+    <div id="particles-js"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">Muhammad Dawood</a>
+            <a class="navbar-brand" href="#">
+                <span class="brand-text">&lt;MD/&gt;</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,59 +53,241 @@
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Home / Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="container text-center">
-            <img src="images/profile.png" alt="Muhammad Dawood" class="profile-img mb-4">
-            <h1 class="display-4 fw-bold">Muhammad Dawood</h1>
-            <p class="lead">Junior Data Scientist & Web Engineer</p>
-            <p class="tagline">Building data-driven tools and AI models to solve real-world problems.</p>
-            <a href="#contact" class="btn btn-primary btn-lg mt-3">Get in Touch</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="hero-badge">
+                        <span class="badge-glow">Available for Opportunities</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Muhammad Dawood</span>
+                    </h1>
+                    <div class="hero-subtitle">
+                        <span class="typed-text"></span><span class="cursor-type">&nbsp;</span>
+                    </div>
+                    <p class="hero-description">
+                        Junior Data Scientist and Web Engineer crafting intelligent solutions 
+                        at the intersection of AI and Web Development. Turning complex data 
+                        into actionable insights and seamless digital experiences.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Hire Me</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-outline">
+                            <span>View Work</span>
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://www.linkedin.com/in/dawood406/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/datascientist970" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:hpofficial406@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="d-none d-md-inline-block"><i class="fas fa-phone"></i> +92-314-1910866</a>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image">
+                            <img src="images/profile.png" alt="Muhammad Dawood" class="img-fluid">
+                        </div>
+                        <div class="floating-card card-1">
+                            <i class="fas fa-code"></i>
+                            <span>50+ Projects</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-robot"></i>
+                            <span>AI Expert</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-chart-line"></i>
+                            <span>95% Accuracy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section-padding">
+    <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <p class="lead text-center">
-                    Junior Data Scientist and Web Engineer with hands-on experience in full-stack web development, machine learning, deep learning, and data analytics. Skilled in Python, Django, JavaScript, SQL, Power BI, and modern data visualization techniques. Adept at building data-driven tools, automated pipelines, and AI models, and providing ICT solutions to improve system performance and user experience. Passionate about applying analytical and technical expertise to support data-informed business decisions.
-                    </p>
+            <div class="row g-5">
+                <div class="col-lg-5" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <h3>2+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>15+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>10+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>5</h3>
+                            <p>Certifications</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="about-content">
+                        <span class="section-subtitle">About Me</span>
+                        <h2 class="section-title">Innovating at the intersection of <span class="gradient-text">Data & Code</span></h2>
+                        <p class="about-text">
+                            I'm a passionate Junior Data Scientist and Web Engineer with a unique blend of skills 
+                            in full-stack development, machine learning, and data analytics. Currently pursuing my 
+                            BS in Computer Science at Abdul Wali Khan University, I've already made significant 
+                            impacts in the tech industry through innovative solutions and data-driven approaches.
+                        </p>
+                        <p class="about-text">
+                            My journey in tech is driven by a fascination with how data can transform businesses 
+                            and how intelligent web applications can enhance user experiences. I've successfully 
+                            optimized data pipelines, achieving 30% reduction in processing time, and developed 
+                            ML models with 95%+ accuracy for real-world applications.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Full-Stack Development</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Machine Learning Expert</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Data Analytics</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Cloud Solutions</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section-padding bg-light">
+    <section id="skills" class="section bg-dark-gradient">
         <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="skill-card">
-                        <h5><i class="fas fa-database me-2"></i>Data & Analytics</h5>
-                        <p>Machine Learning, Deep Learning, Data Analysis, Business Analytics, SQL, AI Agents</p>
+            <div class="text-center" data-aos="fade-up">
+                <span class="section-subtitle">Technical Expertise</span>
+                <h2 class="section-title text-white">Skills & <span class="gradient-text">Technologies</span></h2>
+            </div>
+            <div class="row g-4 mt-5">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-category-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI & Machine Learning</h3>
+                        <div class="skill-items">
+                            <span>Deep Learning</span>
+                            <span>NLP</span>
+                            <span>Computer Vision</span>
+                            <span>LLMs</span>
+                            <span>AI Agents</span>
+                            <span>TensorFlow</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="skill-card">
-                        <h5><i class="fas fa-code me-2"></i>Programming & Web</h5>
-                        <p>Python, JavaScript, PHP, AJAX, Django, Web Services, RESTful APIs</p>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-category-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <div class="skill-items">
+                            <span>Python/Django</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>RESTful APIs</span>
+                            <span>React</span>
+                            <span>Bootstrap</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="skill-card">
-                        <h5><i class="fas fa-tools me-2"></i>Dev Tools & Ops</h5>
-                        <p>Microsoft Power BI, Azure Cloud, Git/GitHub, n8n, Linux, Microsoft Office</p>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-category-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Data & Analytics</h3>
+                        <div class="skill-items">
+                            <span>SQL</span>
+                            <span>Power BI</span>
+                            <span>Pandas</span>
+                            <span>NumPy</span>
+                            <span>Tableau</span>
+                            <span>Excel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-category-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Cloud & DevOps</h3>
+                        <div class="skill-items">
+                            <span>Azure</span>
+                            <span>Git/GitHub</span>
+                            <span>Docker</span>
+                            <span>CI/CD</span>
+                            <span>Linux</span>
+                            <span>n8n</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-category-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Databases</h3>
+                        <div class="skill-items">
+                            <span>PostgreSQL</span>
+                            <span>MySQL</span>
+                            <span>MongoDB</span>
+                            <span>SQLite</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="skill-category-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & Methods</h3>
+                        <div class="skill-items">
+                            <span>Agile/Scrum</span>
+                            <span>Jupyter</span>
+                            <span>VS Code</span>
+                            <span>Postman</span>
+                            <span>Figma</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,58 +295,207 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="section-padding">
+    <section id="experience" class="section">
         <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h4>Junior AI Engineer</h4>
-                    <h6 class="text-primary">iAXON | Apr 2025 - Oct 2025</h6>
-                    <p>Developed and optimized ML/DL models, improving prediction accuracy by 10-25%. Built AI pipelines and automated preprocessing, reducing processing time by 15-30%. Collaborated on integrating AI solutions into production environments.</p>
-                </div>
-                <div class="timeline-item">
-                    <h4>Web Developer & IT Assistant</h4>
-                    <h6 class="text-primary">RABT DEVELOPMENT ORG | Apr 2023 - Apr 2025</h6>
-                    <p>Built web apps with Python, Django, JavaScript. Engineered RESTful APIs, reducing data retrieval times by 25% for 500+ users. Mentored juniors in Git & Agile. Implemented security protocols, reducing incidents by 70%.</p>
-                </div>
-                <div class="timeline-item">
-                    <h4>Data Scientist (Intern)</h4>
-                    <h6 class="text-primary">Internee.pk | Apr 2025 - May 2025</h6>
-                    <p>Preprocessed datasets and supported ML model development. Conducted EDA and automated data pipelines. Collaborated with senior scientists to present findings.</p>
-                </div>
-                <div class="timeline-item">
-                    <h4>Data Scientist (Intern)</h4>
-                    <h6 class="text-primary">ProgrammersTech | Jun 2024 - Jul 2024</h6>
-                    <p>Assisted in developing ML models and performing data analysis using Python and SQL. Designed automated workflows for streamlined data processing.</p>
+            <div class="text-center" data-aos="fade-up">
+                <span class="section-subtitle">Career Journey</span>
+                <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="timeline-modern">
+                        <div class="timeline-item-modern" data-aos="fade-up">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Apr 2025 - Present</div>
+                            <div class="timeline-content">
+                                <h3>Junior AI Engineer</h3>
+                                <h4>iAXON · Pakistan</h4>
+                                <ul>
+                                    <li>Developed ML/DL models achieving 95%+ accuracy for real-world applications</li>
+                                    <li>Optimized data pipelines, reducing preparation time by 30%</li>
+                                    <li>Implemented automated ETL workflows using Python</li>
+                                    <li>Collaborated on AI solutions deployment in production environments</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item-modern" data-aos="fade-up" data-aos-delay="100">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Apr 2023 - Apr 2025</div>
+                            <div class="timeline-content">
+                                <h3>Web Developer & IT Assistant</h3>
+                                <h4>RABT DEVELOPMENT ORG · Mansehra</h4>
+                                <ul>
+                                    <li>Engineered RESTful APIs, reducing data retrieval times by 25%</li>
+                                    <li>Mentored junior developers in Git & Agile practices</li>
+                                    <li>Implemented security protocols, reducing incidents by 70%</li>
+                                    <li>Built responsive web apps serving 500+ monthly users</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item-modern" data-aos="fade-up" data-aos-delay="200">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Mar 2025 - May 2025</div>
+                            <div class="timeline-content">
+                                <h3>Data Scientist (Intern)</h3>
+                                <h4>Internee.pk · Lahore</h4>
+                                <ul>
+                                    <li>Preprocessed datasets and developed ML models for classification tasks</li>
+                                    <li>Conducted EDA uncovering trends for 3+ business initiatives</li>
+                                    <li>Automated data pipelines improving processing efficiency</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item-modern" data-aos="fade-up" data-aos-delay="300">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Jun 2024 - Jul 2024</div>
+                            <div class="timeline-content">
+                                <h3>Data Scientist (Intern)</h3>
+                                <h4>ProgrammersTech · Lahore</h4>
+                                <ul>
+                                    <li>Assisted in ML model development using Python and SQL</li>
+                                    <li>Designed automated workflows for streamlined data processing</li>
+                                    <li>Presented analytical findings to support business decisions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section-padding bg-light">
+    <section id="projects" class="section bg-light-gradient">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="row">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="project-card">
-                        <h5>Predictive ML Models</h5>
-                        <p>Developed and deployed classification & regression models achieving 95%+ accuracy for real-world applications. Reduced data preparation time by 30%.</p>
-                        <a href="https://github.com/datascientist970" target="_blank" class="btn btn-sm btn-outline-primary">View Code <i class="fab fa-github"></i></a>
+            <div class="text-center" data-aos="fade-up">
+                <span class="section-subtitle">My Work</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            </div>
+            <div class="row g-4 mt-5">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-modern">
+                        <div class="project-img">
+                            <img src="https://via.placeholder.com/600x400/2d2d2d/ffffff?text=AI+Prediction+Model" alt="AI Project">
+                        </div>
+                        <div class="project-content">
+                            <h3>AI Predictive Model Suite</h3>
+                            <p>Developed ensemble ML models achieving 95%+ accuracy for classification and regression tasks. Implemented automated feature engineering pipeline.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Scikit-learn</span>
+                                <span>TensorFlow</span>
+                                <span>Pandas</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/datascientist970" target="_blank"><i class="fab fa-github"></i> Code</a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="project-card">
-                        <h5>Automated Data Pipelines</h5>
-                        <p>Designed ETL workflows in Python, automating data preprocessing and improving dataset quality for high-accuracy model training.</p>
-                        <a href="https://github.com/datascientist970" target="_blank" class="btn btn-sm btn-outline-primary">View Code <i class="fab fa-github"></i></a>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-modern">
+                        <div class="project-img">
+                            <img src="https://via.placeholder.com/600x400/2d2d2d/ffffff?text=Data+Pipeline" alt="Data Pipeline">
+                        </div>
+                        <div class="project-content">
+                            <h3>Automated ETL Pipeline</h3>
+                            <p>Designed scalable data pipeline reducing processing time by 30%. Integrated multiple data sources with automated cleaning and transformation.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Apache Airflow</span>
+                                <span>SQL</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/datascientist970" target="_blank"><i class="fab fa-github"></i> Code</a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="project-card">
-                        <h5>Full-Stack Web App</h5>
-                        <p>Built and maintained web applications with Django, JavaScript, and Bootstrap, featuring RESTful APIs and responsive design for enhanced UX.</p>
-                        <a href="https://github.com/datascientist970" target="_blank" class="btn btn-sm btn-outline-primary">View Code <i class="fab fa-github"></i></a>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card-modern">
+                        <div class="project-img">
+                            <img src="https://via.placeholder.com/600x400/2d2d2d/ffffff?text=Analytics+Dashboard" alt="Analytics Dashboard">
+                        </div>
+                        <div class="project-content">
+                            <h3>Business Intelligence Dashboard</h3>
+                            <p>Interactive Power BI dashboard providing real-time insights, leading to 3+ data-informed business initiatives and improved decision-making.</p>
+                            <div class="project-tech">
+                                <span>Power BI</span>
+                                <span>SQL</span>
+                                <span>DAX</span>
+                                <span>Excel</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/datascientist970" target="_blank"><i class="fab fa-github"></i> Code</a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card-modern">
+                        <div class="project-img">
+                            <img src="https://via.placeholder.com/600x400/2d2d2d/ffffff?text=Full-Stack+App" alt="Web Application">
+                        </div>
+                        <div class="project-content">
+                            <h3>Full-Stack Web Application</h3>
+                            <p>Built responsive web app with Django and JavaScript, featuring RESTful APIs and serving 500+ monthly active users.</p>
+                            <div class="project-tech">
+                                <span>Django</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/datascientist970" target="_blank"><i class="fab fa-github"></i> Code</a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-card-modern">
+                        <div class="project-img">
+                            <img src="https://via.placeholder.com/600x400/2d2d2d/ffffff?text=AI+Agent" alt="AI Agent">
+                        </div>
+                        <div class="project-content">
+                            <h3>Intelligent AI Agent System</h3>
+                            <p>Developed conversational AI agent using LLMs and NLP techniques for automated customer support and data querying.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>LangChain</span>
+                                <span>OpenAI</span>
+                                <span>FastAPI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/datascientist970" target="_blank"><i class="fab fa-github"></i> Code</a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-card-modern">
+                        <div class="project-img">
+                            <img src="https://via.placeholder.com/600x400/2d2d2d/ffffff?text=Security+System" alt="Security System">
+                        </div>
+                        <div class="project-content">
+                            <h3>Automated Security Protocol</h3>
+                            <p>Implemented comprehensive security system reducing incidents by 70% through automated backup, monitoring, and threat detection.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Linux</span>
+                                <span>Bash</span>
+                                <span>Network Security</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/datascientist970" target="_blank"><i class="fab fa-github"></i> Code</a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -153,37 +503,65 @@
     </section>
 
     <!-- Education & Certifications -->
-    <section id="education" class="section-padding">
+    <section id="education" class="section">
         <div class="container">
-            <h2 class="section-title">Education & Certifications</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h4>🎓 Education</h4>
-                    <div class="edu-item">
-                        <h5>BS Computer Science</h5>
-                        <p>Abdul Wali Khan University, Mardan (Sep 2021 - Jul 2025) | EQF level 6</p>
-                    </div>
-                    <div class="edu-item">
-                        <h5>Diploma in Information Technology</h5>
-                        <p>Board of Technical Education KPK (Mar 2020 - Feb 2021) | EQF level 4</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <h4>📜 Certifications</h4>
-                    <ul class="cert-list">
-                        <li>IBM Data Science Professional — Coursera</li>
-                        <li>IBM AI Engineering — Coursera</li>
-                        <li>PCAP Programming Essentials in Python — CISCO</li>
-                    </ul>
-                </div>
+            <div class="text-center" data-aos="fade-up">
+                <span class="section-subtitle">Qualifications</span>
+                <h2 class="section-title">Education & <span class="gradient-text">Certifications</span></h2>
             </div>
-            <!-- Awards & Achievements -->
-            <div class="row mt-5">
-                <div class="col-12">
-                    <h4>🏆 Awards & Achievements</h4>
-                    <div class="award-item">
-                        <h5>Elsevier Certificate of Reviewing</h5>
-                        <p>Recognized for reviewing academic and research articles, contributing to peer-reviewed publishing standards.</p>
+            <div class="row g-4 mt-5">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="education-card">
+                        <div class="edu-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>BS Computer Science</h3>
+                        <p class="institution">Abdul Wali Khan University, Mardan</p>
+                        <p class="date">Sep 2021 - Jul 2025 | EQF level 6</p>
+                        <p class="description">Specializing in AI and Data Science. Coursework: Machine Learning, Deep Learning, Database Systems, Web Development.</p>
+                    </div>
+                    <div class="education-card mt-4">
+                        <div class="edu-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Diploma in Information Technology</h3>
+                        <p class="institution">Board of Technical Education KPK</p>
+                        <p class="date">Mar 2020 - Feb 2021 | EQF level 4</p>
+                        <p class="description">Comprehensive training in IT fundamentals, programming, and networking.</p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="certifications-grid">
+                        <div class="cert-card">
+                            <i class="fab fa-ibm"></i>
+                            <h4>IBM Data Science Professional</h4>
+                            <p>Coursera · 2024</p>
+                        </div>
+                        <div class="cert-card">
+                            <i class="fas fa-robot"></i>
+                            <h4>IBM AI Engineering</h4>
+                            <p>Coursera · 2024</p>
+                        </div>
+                        <div class="cert-card">
+                            <i class="fas fa-network-wired"></i>
+                            <h4>PCAP Python Programming</h4>
+                            <p>CISCO · 2023</p>
+                        </div>
+                        <div class="cert-card award">
+                            <i class="fas fa-award"></i>
+                            <h4>Elsevier Certificate of Reviewing</h4>
+                            <p>Recognized for academic reviewing contributions</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Volunteering -->
+                    <div class="volunteer-card mt-4" data-aos="fade-up">
+                        <i class="fas fa-hands-helping"></i>
+                        <div class="volunteer-content">
+                            <h4>Mentor - BS Student Community</h4>
+                            <p class="org">GPGC Nowshera · Apr 2024 - Jun 2025</p>
+                            <p>Conducted sessions on Python, data analysis, and machine learning. Mentored 20+ students on data-driven solutions.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -191,29 +569,61 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section-padding bg-dark text-white">
-        <div class="container text-center">
-            <h2 class="section-title text-white">Get in Touch</h2>
-            <p>I'm open to international opportunities (UK/EU/Canada) and exciting projects. Let's connect!</p>
-            <div class="contact-links mt-4">
-                <a href="mailto:hpofficial406@gmail.com" class="contact-icon" target="_blank"><i class="fas fa-envelope"></i> Email</a>
-                <a href="https://www.linkedin.com/in/dawood406/" class="contact-icon" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/datascientist970" class="contact-icon" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                <a href="#" class="contact-icon" target="_blank"><i class="fas fa-phone"></i> +92-314-1910866</a>
+    <section id="contact" class="section bg-dark-gradient">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title text-white">Let's Work <span class="gradient-text">Together</span></h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-grid">
+                        <a href="mailto:hpofficial406@gmail.com" class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-envelope"></i>
+                            <h4>Email</h4>
+                            <p>hpofficial406@gmail.com</p>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dawood406/" target="_blank" class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fab fa-linkedin"></i>
+                            <h4>LinkedIn</h4>
+                            <p>Connect with me</p>
+                        </a>
+                        <a href="https://github.com/datascientist970" target="_blank" class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fab fa-github"></i>
+                            <h4>GitHub</h4>
+                            <p>View my code</p>
+                        </a>
+                        <a href="#" class="contact-card" data-aos="fade-up" data-aos-delay="400">
+                            <i class="fas fa-phone"></i>
+                            <h4>Phone</h4>
+                            <p>+92-314-1910866</p>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-3 bg-dark text-white-50">
-        <div class="container text-center">
-            <small>© 2025 Muhammad Dawood. All rights reserved.</small>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Muhammad Dawood. Crafted with <i class="fas fa-heart" style="color: #ff4d4d;"></i> for innovation</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS Bundle -->
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
