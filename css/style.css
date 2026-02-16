@@ -1088,3 +1088,82 @@ h1, h2, h3, h4, h5, h6 {
 [data-aos].aos-animate {
     pointer-events: auto;
 }
+
+
+/* Phone link styling */
+.phone-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--light);
+    text-decoration: none;
+    padding: 8px 16px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50px;
+    transition: var(--transition);
+}
+
+.phone-link:hover {
+    background: var(--gradient);
+    transform: translateY(-3px);
+}
+
+/* Detailed project cards */
+.project-detailed {
+    height: 100%;
+    overflow-y: auto;
+    max-height: 600px;
+}
+
+.project-detailed::-webkit-scrollbar {
+    width: 5px;
+}
+
+.project-detailed::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+}
+
+.project-detailed::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+}
+
+.project-subtitle {
+    color: var(--primary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.project-features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.feature-tag {
+    background: rgba(99, 102, 241, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border-left: 3px solid var(--primary);
+    font-size: 0.9rem;
+    color: var(--light);
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+    .hero-social {
+        flex-wrap: wrap;
+    }
+    
+    .phone-link {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .project-detailed {
+        max-height: none;
+    }
+}
