@@ -86,12 +86,13 @@ particlesJS('particles-js', {
 // Typed.js for Hero Section
 const typed = new Typed('.typed-text', {
     strings: [
-        'Data Scientist',
-        'AI Engineer',
-        'Web Developer',
-        'ML Expert',
-        'Problem Solver'
-    ],
+    'Data Scientist',
+    'AI Engineer',
+    'Machine Learning Engineer',
+    'Web Developer',
+    'Research Associate',
+    'Problem Solver'
+],
     typeSpeed: 50,
     backSpeed: 30,
     backDelay: 2000,
@@ -295,3 +296,4 @@ const validateEmail = (email) => {
 console.log('%c👋 Welcome to Muhammad Dawood\'s Portfolio', 'font-size: 20px; color: #6366f1; font-weight: bold;');
 console.log('%c🚀 Data Scientist & AI Engineer', 'font-size: 16px; color: #8b5cf6;');
 console.log('%c📧 hpofficial406@gmail.com', 'font-size: 14px; color: #64748b;');
+
