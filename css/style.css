@@ -1,6 +1,3 @@
-/* style.css - Modern Redesign */
-
-/* Reset and Base Styles */
 :root {
     --primary: #6366f1;
     --primary-dark: #4f46e5;
@@ -1167,3 +1164,4 @@ h1, h2, h3, h4, h5, h6 {
         max-height: none;
     }
 }
+
